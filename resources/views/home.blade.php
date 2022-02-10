@@ -8,6 +8,10 @@
   <title>Document</title>
 </head>
 
+@component('header')
+    
+@endcomponent
+
 <body>
   <h1>Hello World!</h1>
   <h2>Ciao {{ $name }} {{ $lastname }}</h2>
