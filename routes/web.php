@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/try', function () {
+Route::get('/andrea', function () {
     $data = [
         'name' =>  'Andrea',
         'lastname' => 'Nocciolini',
@@ -43,5 +43,32 @@ Route::get('/try', function () {
 
         ]
     ];
-    return view('home', $data);
-});
+    return view('andrea', $data);
+})->name('andrea');
+
+Route::get('/simone', function () {
+    $data = [
+        'name' =>  'Simone',
+        'lastname' => 'Mazzola',
+        'pets' => [
+            [
+                'name' => 'Fluvio',
+                'type' => 'cat'
+            ]
+        ]
+    ];
+    return view('simone', $data);
+})->name('simone');
+
+Route::get('/lenticchie', function () {
+    $data = [
+        'name' =>  'lenticchie',
+        'lastname' => 'lenticchie',
+        'skills' => [
+            'Javascript',
+            'PHP',
+            'HTML'
+        ],
+    ];
+    return view('lenticchie', $data);
+})->name('lenticchie');

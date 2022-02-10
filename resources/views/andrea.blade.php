@@ -15,9 +15,9 @@
 <body>
   <h1>Hello World!</h1>
   <h2>Ciao {{ $name }} {{ $lastname }}</h2>
-  <h3>Skills</h3>
 
   @if(isset($skills))
+  <h3>Skills</h3>
   <ul>
     @foreach ($skills as $skill)
     <li>{{ $skill }}</li>
@@ -25,8 +25,8 @@
   </ul>
   @endif
 
-  <h3>Pets</h3>
   @if(isset($pets))
+  <h3>Pets</h3>
   <ul>
     @foreach ($pets as $pet)
     <li>{{ $pet['name']}}, {{$pet['type']}}</li>
