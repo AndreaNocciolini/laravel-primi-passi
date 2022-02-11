@@ -37,7 +37,7 @@
     </h2>
     <nav>
         <ul>
-            <li><a href="/">Welcome!</a></li>
+            <li><a href="{{ route('welcome') }}">Welcome!</a></li>
             <li><a href="{{ route('andrea') }}">Andrea</a></li>
             <li><a href="{{ route('simone') }}">Simone</a></li>
             <li><a href="{{ route('lenticchie') }}">Lenticchie</a></li>
